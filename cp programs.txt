@@ -1,0 +1,92 @@
+find the gross salary
+
+#include<stdio.h>
+ 
+int main() {
+   int gross_salary, basic, da, ta;
+ 
+   printf("Enter basic salary : ");
+   scanf("%d", &basic);
+ 
+   da = (10 * basic) / 100;
+   ta = (12 * basic) / 100;
+ 
+   gross_salary = basic + da + ta;
+ 
+   printf("\nGross salary : %d", gross_salary);
+   return (0);
+} 
+
+
+to convert given integer in no.of years,months,days
+#include <stdio.h>
+int main() {
+	int ndays, y, m, d;	
+	
+	printf("Input no. of days: ");
+	
+	scanf("%d", &ndays);
+	
+	y = (int) ndays/365;
+	
+	ndays = ndays-(365*y);
+		
+	m = (int)ndays/30;
+	
+	d = (int)ndays-(m*30);
+	
+	printf(" %d Year(s) \n %d Month(s) \n %d Day(s)", y, m, d);
+	return 0;
+}
+
+to find the greatest of three digits using ternary operator
+# include <stdio.h>
+ 
+void main()
+{
+    int a, b, c, big ;
+ 
+    printf("Enter three numbers : ") ;
+ 
+    scanf("%d %d %d", &a, &b, &c) ;
+ 
+    big = a > b ? (a > c ? a : c) : (b > c ? b : c) ;
+ 
+    printf("\nThe biggest number is : %d", big) ;
+}
+
+
+To display grade of the student.(if-else)
+#include<stdio.h>
+int main()
+{
+   int score;
+   char grade;
+
+   // take score
+   printf("Enter score(0-100): ");
+   scanf("%d",&score);
+   if(score>=90 && score<=100)
+     grade = 'A';
+   else if(score>=80)
+     grade = 'B';
+   else if(score>=70)
+     grade = 'C';
+
+   else if(score>=60)
+     grade = 'D';
+
+   else if(score>=50)
+     grade = 'E';
+
+   
+   else
+     grade = 'F';
+
+ 
+   printf("Grade: %c\n", grade);
+
+   return 0;
+}
+
+To perform menu driven program using to demonstrate Bitwise operators.

@@ -1,0 +1,78 @@
+1.
+Command 1: docker –version 
+
+
+2.
+Command 2: docker pull ubuntu
+
+
+3.
+Command 3: docker login
+
+
+4.
+Command 4: docker images
+
+
+5.
+Command 5: docker build -t image .
+
+
+6.
+Command 6: docker container run image
+7.
+Command 7:  docker ps
+
+
+8.
+Command 8: docker pull ubuntu:rolling
+
+
+9.
+Command 9: docker search image
+
+
+10.
+Command 10: docker inspect image
+
+
+11.
+Command 11: docker history image
+
+
+12.
+Command 12: docker config
+
+
+13.
+Command 13: docker images -q
+
+
+14.
+Command 14: docker rm a843e981183cb69063c72042b9bc20ec4c1797e5061bc2e2bb6c9f07670d89fa
+
+
+15.
+Command 15: docker rmi ubuntu
+ 
+16.
+Command 16: docker stats 9045e50c82ba1e54e1206e7a3d6a157ba96bf85c1f8fb72099121b8e61ddbeac
+
+
+17.
+Command 17: docker stop 9045e50c82ba1e54e1206e7a3d6a157ba96bf85c1f8fb72099121b8e61ddbeac
+
+
+18.
+Command 18: docker restart 9045e50c82ba1e54e1206e7a3d6a157ba96bf85c1f8fb72099121b8e61ddbeac
+
+
+19.
+Command 19: docker pause 9045e50c82ba1e54e1206e7a3d6a157ba96bf85c1f8fb72099121b8e61ddbeac
+ 
+20.
+Command 20: docker top 9045e50c82ba1e54e1206e7a3d6a157ba96bf85c1f8fb72099121b8e61ddbeac
+
+
+21
+command:docker container create ubuntu

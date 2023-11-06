@@ -1,0 +1,15 @@
+//aws lambda function an object has been added
+import json 
+import boto3 
+s3=boto3.client('s3') 
+def lambda_handler(event,context): 
+    bucket="adlmanthan14"
+    dataToUpload = {} 
+    dataToUpload['PID'] = '211088' 
+    dataToUpload['DEPT'] = 'INFT' 
+    dataToUpload['NAME'] = 'manthan' 
+    dataToUpload['FILE'] = 'manthan' 
+    fileName = 'manthan' + '.json' 
+    uploadByteStream= bytes(json.dumps(dataToUpload).encode('UTF-8')) 
+    s3.put_object(Bucket=bucket,Key=fileName,Body=uploadByteStream) 
+print('an object has been added')

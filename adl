@@ -13,3 +13,29 @@ def lambda_handler(event,context):
     uploadByteStream= bytes(json.dumps(dataToUpload).encode('UTF-8')) 
     s3.put_object(Bucket=bucket,Key=fileName,Body=uploadByteStream) 
 print('an object has been added')
+
+
+
+//terraform code
+provider "aws" {
+  access_key = "AKIAXTZUE2Q4MT7UZ3EH"
+  secret_key = "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"
+  region     = "us-east-1"
+}
+
+resource "aws_instance" "terraform_sfit" {
+  ami           = "ami-01bc990364452ab3e"
+  instance_type = "t2.micro"
+
+
+
+//commands
+
+ “terraform init”
+-> “terraform plan” 
+-> “terraform apply”
+-> Check output on ec2 instances 
+->“terraform destroy”
+
+
+}

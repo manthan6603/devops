@@ -156,3 +156,8 @@ Create IAM role
 Deploy Elastic Beanstalk environment
 Create AWS CodePipeline and fork GitHub repository and Deploy
 
+//docker
+sudo apt-get update
+apt install docker.io
+sudo systemctl enable docker
+sudo systemctl status docker
